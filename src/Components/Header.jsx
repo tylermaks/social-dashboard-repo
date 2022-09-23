@@ -1,10 +1,10 @@
 import React from "react"
 
-import "../Assets/Styles/Header/Header.css"
+import "../Assets/Styles/Header.scss"
 
 function Header(){
     return(
-        <section id="header" class="container">
+        <section id="header">
             <article>
                 <h1>Social Media Dashboard</h1>
                 <p>Total Followers: 23,004</p>
@@ -12,7 +12,10 @@ function Header(){
 
             <div>
                 <p>Dark Mode</p>
-                {/* Add Toggle Here */}
+                <label class="switch">
+                    <input type="checkbox"/>
+                    <span class="slider round"></span>
+                </label>
             </div>
       </section>
     )

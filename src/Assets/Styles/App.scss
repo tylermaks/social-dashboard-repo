@@ -7,7 +7,6 @@ $instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
 $youtube: hsl(348, 97%, 39%);
 
 //DARK THEME
-//Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%)
 $dkBg: hsl(230, 17%, 14%);
 $dkAltBg: hsl(232, 19%, 15%);
 $dkCard: hsl(228, 28%, 20%);
@@ -37,9 +36,33 @@ body{
     font-family: "Inter", sans-serif;
 }
 
+h1{
+    font-size: 3rem;
+}
+
 p{
     font-size: 14px;
 }
+
+//GLOBAL + COLOR PALLETTES
+.container{
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    width: 100%;
+
+    h1, h4{
+        color: var(--heading-color);
+    }
+
+    //MODIFIERS
+    &--lightMode{
+        --bg-color: #{$ltBg};
+        --text-color: #{$ltText};
+        --heading-color: #{$ltAltText};
+    }
+}
+
 
 //APP
 .app{

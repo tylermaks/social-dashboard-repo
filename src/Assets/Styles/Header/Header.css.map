@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAEA,AACI,OADG,CACH,OAAO,CAAA;EACH,aAAa,EAAE,GAAG,CAAC,KAAK,CAJvB,OAAkB;EAKnB,OAAO,EAAE,MAAM;CAClB;;AAJL,AAMI,OANG,CAMH,CAAC,CAAA;EACG,UAAU,EAAE,MAChB;CAAC;;AARL,AAUI,OAVG,CAUH,GAAG,CAAA;EACC,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,aAAa;EAC9B,OAAO,EAAE,MAAM;CAClB",
-    "sources": [
-        "Header.scss"
-    ],
-    "names": [],
-    "file": "Header.css"
-}
