@@ -1,12 +1,14 @@
 import './Assets/Styles/App.scss';
 import Header from './Components/Header';
-import Summary from './Components/Summary';
+import SummaryCard from './Components/SummaryCard';
+import DailyCard from './Components/DailyCard';
 
 function App() {
   return (
     <main className='app'>
       <Header />
-      <Summary />
+      <SummaryCard />
+      <DailyCard />
     </main>
   );
 }

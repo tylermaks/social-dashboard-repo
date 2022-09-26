@@ -1,9 +1,9 @@
 import React from "react"
 
-import summaryData from "../summaryData";
+import {summaryData} from "../data";
 import "../Assets/Styles/Summary.scss"
 
-function Summary(){
+function SummaryCard(){
     return(
         <>
             {
@@ -20,8 +20,7 @@ function Summary(){
                             </article>
                             <div>
                                 <img src={data.arrow} alt="arrow" />
-                                <p>{data.today}</p>
-                                <p>Today</p>
+                                <p>{data.today + " Today"}</p>
                             </div>
                         </section>
                     )
@@ -33,4 +32,4 @@ function Summary(){
     )
 }
 
-export default Summary;
+export default SummaryCard;

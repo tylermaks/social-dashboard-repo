@@ -1,0 +1,28 @@
+$limeGreen: hsl(163, 72%, 41%);
+$red: hsl(356, 69%, 56%);
+
+.daily-card{ 
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
+
+.daily-card-inner{ 
+    display: flex;
+    justify-content: space-between;
+
+    &:nth-child(1){
+        margin-bottom: 1rem;
+    }
+}
+
+.percentage{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem
+}
+
+
+.icon{ 
+    height: 25px;
+    width: 25px;
+}

@@ -49,15 +49,16 @@ p{
     background-color: var(--bg-color);
     border-radius: 5px;
     color: var(--text-color);
+    padding: 2rem;
     width: 100%;
 
-    h1, h4{
+    h1, h2, h4{
         color: var(--heading-color);
     }
 
     //MODIFIERS
     &--lightMode{
-        --bg-color: #{$ltBg};
+        --bg-color: #{$ltCard};
         --text-color: #{$ltText};
         --heading-color: #{$ltAltText};
     }
