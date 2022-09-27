@@ -1,17 +1,18 @@
-$limeGreen: hsl(163, 72%, 41%);
-$red: hsl(356, 69%, 56%);
-
-.daily-card{ 
-    margin-bottom: 1rem;
-    padding: 2rem;
+.title{
+    margin: 5rem 0 2rem 0;
 }
 
-.daily-card-inner{ 
+.card-inner{ 
     display: flex;
     justify-content: space-between;
+    
+    &--top{
+        align-items: flex-start;
+    }
 
-    &:nth-child(1){
-        margin-bottom: 1rem;
+    &--bottom{
+        margin-top: 1.5rem;
+        align-items: flex-end
     }
 }
 
@@ -19,10 +20,4 @@ $red: hsl(356, 69%, 56%);
     display: flex;
     align-items: center;
     gap: 0.25rem
-}
-
-
-.icon{ 
-    height: 25px;
-    width: 25px;
 }

@@ -13,7 +13,8 @@ const summaryData = [
         account: "@nathanf", 
         total: 1987,
         today: 12,
-        arrow: upArrow
+        arrow: upArrow,
+        status: "green"
     }, 
 
     {
@@ -23,7 +24,8 @@ const summaryData = [
         account: "@nathanf", 
         total: 1044,
         today: 99,
-        arrow: upArrow
+        arrow: upArrow,
+        status: "green"
     },
 
     {
@@ -33,7 +35,8 @@ const summaryData = [
         account: "@realnathanf", 
         total: "11k",
         today: 1099,
-        arrow: upArrow
+        arrow: upArrow,
+        status: "green"
     },
 
     {
@@ -43,7 +46,8 @@ const summaryData = [
         account: "Nathan F.", 
         total: 8239,
         today: 144,
-        arrow: downArrow
+        arrow: downArrow,
+        status: "red"
     }
 ]
 
@@ -54,7 +58,8 @@ const dailyData = [
         type: "Page Views",
         total: 87,
         percentage: 3,
-        arrow: upArrow
+        arrow: upArrow,
+        status: "green"
     },
 
     {
@@ -63,7 +68,8 @@ const dailyData = [
         type: "Likes",
         total: 52,
         percentage: 2,
-        arrow: downArrow
+        arrow: downArrow,
+        status: "red"
     },
 
     {
@@ -72,7 +78,8 @@ const dailyData = [
         type: "Likes",
         total: 5462,
         percentage: 2257,
-        arrow: upArrow
+        arrow: upArrow,
+        status: "green"
     },
 
 
@@ -82,7 +89,8 @@ const dailyData = [
         type: "Profile views",
         total: "52k",
         percentage: 1375,
-        arrow: upArrow
+        arrow: upArrow,
+        status: "green"
     },
 
     {
@@ -91,7 +99,8 @@ const dailyData = [
         type: "Retweets",
         total: 117,
         percentage: 303,
-        arrow: upArrow
+        arrow: upArrow,
+        status: "green"
     },
 
     {
@@ -100,7 +109,8 @@ const dailyData = [
         type: "Likes",
         total: 507,
         percentage: 553,
-        arrow: upArrow
+        arrow: upArrow,
+        status: "green"
     },
 
     {
@@ -109,7 +119,8 @@ const dailyData = [
         type: "Likes",
         total: 107,
         percentage: 19,
-        arrow: downArrow
+        arrow: downArrow,
+        status: "red"
     },
 
     {
@@ -118,7 +129,8 @@ const dailyData = [
         type: "Total views",
         total: 1407,
         percentage: 12,
-        arrow: downArrow
+        arrow: downArrow,
+        status: "red"
     }
 
 ]

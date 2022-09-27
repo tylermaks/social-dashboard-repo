@@ -5,11 +5,11 @@ import "../Assets/Styles/Summary.scss"
 
 function SummaryCard(){
     return(
-        <>
+        <section className="container">
             {
                 summaryData.map(data => {
                     return(
-                        <section className={"container container--lightMode summary summary--" + data.platform}>
+                        <section className={"card card--lightMode summary summary--" + data.platform}>
                             <div>
                                 <img src={data.icon} alt={data.account} />
                                 {data.account}
@@ -20,13 +20,13 @@ function SummaryCard(){
                             </article>
                             <div>
                                 <img src={data.arrow} alt="arrow" />
-                                <p>{data.today + " Today"}</p>
+                                <p className={data.status}>{data.today + " Today"}</p>
                             </div>
                         </section>
                     )
                 })
             }
-        </>
+        </section>
 
       
     )
