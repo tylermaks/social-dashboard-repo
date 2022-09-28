@@ -3,16 +3,16 @@ import React from "react"
 import {summaryData} from "../data";
 import "../Assets/Styles/Summary.scss"
 
-function SummaryCard(){
+function SummaryCard({modeClass}){
     return(
         <section className="container">
             {
                 summaryData.map(data => {
                     return(
-                        <section className={"card card--lightMode summary summary--" + data.platform}>
+                        <section className={"card app__card summary summary--" + data.platform}>
                             <div>
                                 <img src={data.icon} alt={data.account} />
-                                {data.account}
+                                <p>{data.account}</p>
                             </div>
                             <article>
                                 <h1>{data.total}</h1>

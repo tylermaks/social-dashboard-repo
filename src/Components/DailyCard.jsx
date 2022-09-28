@@ -3,7 +3,7 @@ import React from "react"
 import {dailyData} from "../data";
 import "../Assets/Styles/DailyCard.scss"
 
-function DailyCard(){
+function DailyCard({modeClass}){
     return(
         <section>
             <h2 className="title">Overview - Today</h2>
@@ -11,7 +11,7 @@ function DailyCard(){
                 {
                     dailyData.map(data => {
                         return(
-                            <section className="card card--lightMode daily-card">
+                            <section className="daily-card card app__card">
                                 <div className="card-inner card-inner--top">
                                     <p>{data.type}</p>
                                     <img className="icon" src={data.icon} alt="social media logo" />

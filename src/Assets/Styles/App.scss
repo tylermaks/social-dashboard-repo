@@ -32,7 +32,6 @@ body{
     font-family: "Inter", sans-serif;
 }
 
-
 //FONTS
 h1{
     font-size: 3rem;
@@ -43,14 +42,19 @@ p{
 }
 
 .green{
-    color: $limeGreen
+    color: $limeGreen !important;
 }
 
 .red{
-    color: $red;
+    color: $red !important;
 }
 
-//GLOBAL + COLOR PALLETTES
+//GLOBAL CONTAINERS
+section{ 
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
 .container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
@@ -58,29 +62,60 @@ p{
 }
 
 .card{
-    background-color: var(--bg-color);
     border-radius: 5px;
-    color: var(--text-color);
     padding: 2rem;
-
     width: 100%;
+    z-index: 1;
+}
+
+.bg-box{
+    border-bottom-left-radius: 1rem;
+    height: 300px;
+    width: 100%;
+
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+
+//APP + GLOBAL COLOR PALLETTE
+.app{
+    background-color: var(--bg-color);
+    background-image: var(--bg-alt-color);
+    padding: clamp(1rem, 3.5vw, 5rem);
+    width: 100%;
+    margin: 0 auto;
 
     h1, h2, h4{
         color: var(--heading-color);
     }
 
-    //MODIFIERS
-    &--lightMode{
-        --bg-color: #{$ltCard};
+    p, span{
+        color: var(--text-color);
+    }
+
+    &__card{
+        background-color: var(--bg-card-color);
+    }
+
+    &__bg{ 
+        background-color: var(--bg-alt-color);
+    }
+
+    //MODIFIER
+    &--lightMode{ 
+        --bg-color: #{white};
+        --bg-alt-color: #{$ltBg};
+        --bg-card-color: #{$ltCard};
         --text-color: #{$ltText};
         --heading-color: #{$ltAltText};
     }
-}
 
-
-//APP
-.app{
-    padding: clamp(1rem, 3.5vw, 5rem);
-    max-width: 1445px;
-    margin: 0 auto;
+    &--darkMode{
+        --bg-color: #{$dkBg};
+        --bg-alt-color: #{$dkAltBg};
+        --bg-card-color: #{$dkCard};
+        --text-color: #{$dkText};
+        --heading-color: #{$dkText};
+    }   
 }
