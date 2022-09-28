@@ -63,6 +63,7 @@ section{
 
 .card{
     border-radius: 5px;
+    cursor: pointer;
     padding: 2rem;
     width: 100%;
     z-index: 1;
@@ -98,6 +99,10 @@ section{
         background-color: var(--bg-card-color);
     }
 
+    &__card:hover{
+        filter: var(--hover);
+    }
+
     &__bg{ 
         background-color: var(--bg-alt-color);
     }
@@ -109,6 +114,7 @@ section{
         --bg-card-color: #{$ltCard};
         --text-color: #{$ltText};
         --heading-color: #{$ltAltText};
+        --hover: #{brightness(0.95)};
     }
 
     &--darkMode{
@@ -117,5 +123,6 @@ section{
         --bg-card-color: #{$dkCard};
         --text-color: #{$dkText};
         --heading-color: #{$dkText};
+        --hover: #{brightness(1.12)};
     }   
 }
